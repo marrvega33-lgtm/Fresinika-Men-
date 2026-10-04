@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+/*tambien estan los otros diseños para el fondo*/
+.body {
+  background-image: url(forotro.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+ 
+.hero {
+  font-family: Times New Roman;
+  background-color: #fff0f5;
+  color: #F9CBD6;
+  padding: 2rem 1rem 1rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  box-sizing: border-box;
+}
+ 
+/*esta etiqueta me confunde mucho (///investigar acerca de ella///)*/
+.hero-header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+ 
+.brand-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+ 
+.logo { 
+  color: #9e182b;
+  text-align: center;
+  margin: 0;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+ 
+.hero-text {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  margin-bottom: 2rem;
+  color: #9e182b
+}
+ 
+.section-title {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+  color: #9e182b;
+}
+ 
+.section-subtitle {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 2rem;
+  color: #FF779E;
+}
+ 
+ nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 14px 16px;
+    z-index: 10;
+  }
+  
+  nav button {
+    flex-shrink: 0;
+    border: 1.5px solid var(--cafe);
+    background: transparent;
+    color: var(--cafe);
+    padding: 10px 25px;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  nav button.activo,
+  nav button:hover {
+    background: var(--cafe);
+    color: var(--crema);
+  }
+ 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+ 
+.gallery-grid figure {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 0.8rem;
+}
+ 
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+ 
+ 
+/*Sino aplico estos atributos como tal, apreceran como lineas, no en bloque*/
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.2rem;
+  padding: 0.8rem;    
+}
+ 
+.subsection-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #9e182b;
+  margin-top: 0.8rem;
+}
+ 
+.product-card {
+  padding: 0.7rem;
+}
+ 
+.section-alt ul {
+  color: #FF779E;
+  text-align: center;  
+  list-style: none;
+}
+ 
+.section-section-alt {
+  font-family: Times New Roman;
+  background-color: #9E182B;
+  color: #FBF4EB; 
+}
+ 
+ 
+ 
+ 
+/*esta seccion es especificamente del estilo de experimento*/
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+}
+ 
+.body {
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+ 
+.section-section-alt {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+section {
+  margin-bottom: 36px;
+}
+ 
+section h{
+  color: var(--rojo);
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+  border-bottom: 2px solid var(--acento);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+ 
+.section-alt {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #9e182b;
+  margin-top: 0.8rem;
+}
+ 
+.menu-row {
+ 
+  display: flex;
+  justify-content: space-between;
+  
+  /*grid-template-columns: auto;
+  align-items: center;
+  margin-bottom: 8px;*/
+}
+ 
+.product-name {
+  text-align: left;
+  font-weight: bold;
+}
+ 
+.precio-col {
+  text-align: right;
+  font-weight: bold;
+ 
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px dashed #d8c7b0;
+}
+ 
+.item-info h3 {
+  font-size: 1.05rem;
+  color: var(--texto);
+  font-family: Times New Roman;
+}
+ 
+.item-info p {
+  font-size: 0.88rem;
+  color: #7a6a5f;
+  margin-top: 4px;
+}
+ 
+.precio {
+  font-weight: bold;
+  color: var(--acento);
+  white-space: nowrap;
+  font-size: 1.05rem;
+}
+ 
+.etiqueta {
+  display: inline-block;
+  font-size: 0.7rem;
+  background: var(--acento);
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 7px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+ 
+:root {
+  --rojo: #9E182B;
+  --crema: #f7f1e8;
+  --acento: #FF779E;
+  --texto: #9E182B;
+}
+ 
+ 
+
+:root {
+  --cafe: #9E182B; 
+}
+ 
+nav#menu-vistas {
+  justify-content: center;
+  
+}
+ 
+.vista {
+  display: none;
+  scroll-margin-top: 70px; 
+}
+ 
+.vista.activa {
+  display: block;
+}
+
+ nav#menu-vistas button {
+  background: #fff;
+}
+
+nav#menu-vistas button.activo,
+nav#menu-vistas button:hover {
+  background: var(--cafe);
+  color: var(--crema);
+}
+
+html {
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.card-grid,
+.gallery-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+}
+
+.product-card .gallery-grid {
+  grid-template-columns: 1fr;
+}
+
+
+#vista-cafe {
+  max-width: 732px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.section-section-alt p {
+  overflow-wrap: break-word;
+}
+
+
+@media (max-width: 1024px) {
+  .body {
+    background-image: none;
+  }
+
+  .body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: url(forotro.png) center / cover no-repeat;
+    pointer-events: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .section-section-alt {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .logo {
+    font-size: clamp(1.6rem, 9vw, 3rem);
+    letter-spacing: 0.12em;
+  }
+}
+
+
+@media (max-width: 400px) {
+  nav#menu-vistas button {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+
+  .item {
+    gap: 10px;
+  }
+
+  .precio {
+    font-size: 0.95rem;
+  }
+}
